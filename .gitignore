@@ -1,0 +1,44 @@
+# Ignorar modelos de PyTorch
+*.pt
+
+# Ignorar ficheros de caché
+*.cache
+
+# Ignorar los directorios de resultados de los benchmarks y entrenamientos
+benchMarkModelos/base/resultados_1_epoc/
+benchMarkModelos/base/resultados_test/
+benchMarkModelos/entrenados/resultados_20_epoc/
+benchMarkModelos/entrenados/resultados_200_epoc/
+benchMarkModelos/entrenados/resultados_fineTunning/
+benchMarkModelos/entrenados/resultados_test_200_epoc/
+entrenamiento/runs/
+webCam/runs/
+webCam/output/
+
+# Ignorar imágenes de entrada para la webcam
+webCam/input/
+
+# Ignorar directorios de datos. 
+# Estos datos deberían ser manejados con una herramienta como DVC.
+# Si no se usa DVC, es mejor no subir los datos a GitHub.
+data/
+preprocesado/data/
+preprocesado/data_gatos/
+preprocesado/ExDark/
+preprocesado/images_subcarpetas/
+preprocesado/labels_subcarpetas/
+preprocesado/test/
+ExDark_Annno/
+
+# Ignorar directorios específicos de Python
+__pycache__/
+.ipynb_checkpoints/
+
+# Ignorar ficheros específicos del sistema operativo
+.DS_Store
+
+# Ignorar ficheros de entorno virtual
+/venv/
+/.venv/
+/env/
+/.env/
